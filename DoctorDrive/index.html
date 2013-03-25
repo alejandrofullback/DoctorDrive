@@ -7,64 +7,20 @@
 <link href="Content/bootstrap-responsive.css" rel="stylesheet" />
 <link href="Content/font-awesome.min.css" rel="stylesheet" />
 <body>
-    <div class="navbar">
-        <div class="navbar-inner">
-            <div class="container" style="width: auto;">
-                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </a>
-                <a class="brand" href="#">Doctor Drive</a>
-                <div class="nav-collapse">
-                    <ul class="nav">
-                        <li class="active"><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </div>
-                <!-- /.nav-collapse -->
-            </div>
-        </div>
-        <!-- /navbar-inner -->
-    </div>
+    <div data-bind="template: { name: 'modules/header/html/header' }"></div>
     <div class="container-fluid">
-        <h3>Resumo dos Pacientes</h3>
-        <table class="table table-bordered table-striped table-hover">
-            <thead>
-                <tr>
-                    <th>#</th>
-                    <th>Leito</th>
-                    <th>Nome</th>
-                    <th>Diagnóstico</th>
-                    <th>Conduta</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                    <td>@mdo</td>
-
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                    <td>@fat</td>
-                    <td>@mdo</td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>Larry</td>
-                    <td>the Bird</td>
-                    <td>@twitter</td>
-                    <td>@twitter</td>
-                </tr>
-            </tbody>
-        </table>
+        <!--<div data-bind="template: { name: selectedScreen() ? selectedScreen().template : '', data: selectedScreen() }"></div>-->
     </div>
+
+
+    <script type='text/javascript' src="Scripts/jquery-1.9.1.js"></script>
+    <script type='text/javascript' src="Scripts/bootstrap.js"></script>
+    <script type='text/javascript' src="Scripts/knockout-2.2.1.js"></script>
+    <script type='text/javascript' src="Scripts/knockout.mapping-latest.js"></script>
+    <script type='text/javascript' src="Scripts/koExternalTemplateEngine_all.js"></script>
+
+    
+    <script type='text/javascript' src="modules/header/header.js"></script>
+    <script type='text/javascript' src="main.js"></script>
 </body>
 </html>

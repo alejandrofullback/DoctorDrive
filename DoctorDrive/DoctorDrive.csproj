@@ -75,8 +75,19 @@
     <Content Include="Content\images\glyphicons-halflings-white.png" />
     <Content Include="Content\images\glyphicons-halflings.png" />
     <Content Include="index.html" />
+    <Content Include="main.js" />
+    <Content Include="modules\header\header.js" />
+    <Content Include="modules\header\html\header.html" />
+    <Content Include="modules\home\home.js" />
+    <Content Include="modules\home\html\home.html" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\infuser-amd.js" />
+    <Content Include="Scripts\infuser-amd.min.gz.js" />
+    <Content Include="Scripts\infuser-amd.min.js" />
+    <Content Include="Scripts\infuser.js" />
+    <Content Include="Scripts\infuser.min.gz.js" />
+    <Content Include="Scripts\infuser.min.js" />
     <Content Include="Scripts\jquery-1.9.1.js" />
     <Content Include="Scripts\jquery-1.9.1.min.js" />
     <Content Include="Scripts\knockout-2.2.1.debug.js" />
@@ -85,6 +96,18 @@
     <Content Include="Scripts\knockout.mapping-latest.js" />
     <Content Include="Scripts\knockout.validation.debug.js" />
     <Content Include="Scripts\knockout.validation.js" />
+    <Content Include="Scripts\koExternalTemplateEngine-amd.js" />
+    <Content Include="Scripts\koExternalTemplateEngine-amd.min.js" />
+    <Content Include="Scripts\koExternalTemplateEngine.js" />
+    <Content Include="Scripts\koExternalTemplateEngine.min.js" />
+    <Content Include="Scripts\koExternalTemplateEngine_all.js" />
+    <Content Include="Scripts\koExternalTemplateEngine_all.min.js" />
+    <Content Include="Scripts\TrafficCop-amd.js" />
+    <Content Include="Scripts\TrafficCop-amd.min.gz.js" />
+    <Content Include="Scripts\TrafficCop-amd.min.js" />
+    <Content Include="Scripts\TrafficCop.js" />
+    <Content Include="Scripts\TrafficCop.min.gz.js" />
+    <Content Include="Scripts\TrafficCop.min.js" />
     <Content Include="Web.config" />
     <Content Include="Scripts\jquery-1.9.1.min.map" />
   </ItemGroup>
@@ -100,9 +123,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Modules\Header\html\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
