@@ -7,11 +7,10 @@
 <link href="Content/bootstrap-responsive.css" rel="stylesheet" />
 <link href="Content/font-awesome.min.css" rel="stylesheet" />
 <body>
-    <div data-bind="template: { name: 'modules/header/html/header' }"></div>
+    <div data-bind="template: { name: 'header/html/header' }"></div>
     <div class="container-fluid">
-        <!--<div data-bind="template: { name: selectedScreen() ? selectedScreen().template : '', data: selectedScreen() }"></div>-->
+        <div data-bind="template: { name: selectedScreen() ? selectedScreen().template : '', data: selectedScreen() }"></div>
     </div>
-
 
     <script type='text/javascript' src="Scripts/jquery-1.9.1.js"></script>
     <script type='text/javascript' src="Scripts/bootstrap.js"></script>
@@ -19,8 +18,9 @@
     <script type='text/javascript' src="Scripts/knockout.mapping-latest.js"></script>
     <script type='text/javascript' src="Scripts/koExternalTemplateEngine_all.js"></script>
 
-    
+
     <script type='text/javascript' src="modules/header/header.js"></script>
+    <script type='text/javascript' src="modules/home/home.js"></script>
     <script type='text/javascript' src="main.js"></script>
 </body>
 </html>
