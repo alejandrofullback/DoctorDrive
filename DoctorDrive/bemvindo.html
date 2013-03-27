@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+
+    <link rel="stylesheet" type="text/css" href="/Content/css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="/Content/css/structure.css" />
+
+<!--    <link rel="shortcut icon" href="../Content/css/ico/favicon.png">-->
+
+
+    <form action="/" class="box login" method="GET">
+        <fieldset class="boxBody">
+            <label for="UserName" placeholder="Usuario..." tabindex="1">Usuario</label>
+            <span class="field-validation-valid" data-valmsg-for="UserName" data-valmsg-replace="true"></span>
+            <input data-val="true" data-val-required="The Usuario field is required." id="UserName" name="UserName" type="text" value="" />
+            <label for="Password">Contrase&#241;a</label>
+            <input data-val="true" data-val-required="The Contraseña field is required." id="Password" name="Password" tabindex="2" type="password" />
+            <span class="field-validation-valid" data-valmsg-for="Password" data-valmsg-replace="true"></span>
+        </fieldset>
+        <footer>
+            <label>
+                <input data-val="true" data-val-required="The No cerrar sessión field is required." id="RememberMe" name="RememberMe" tabindex="3" type="checkbox" value="true" /><input name="RememberMe" type="hidden" value="false" />No cerrar sessi&#243;n </label>
+            <input type="submit" class="btnLogin" value="Entrar" tabindex="4" />
+        </footer>
+    </form>
+    <footer id="main">
+    </footer>
+    <script type="text/javascript" src="/Scripts/jquery-1.9.1.js"></script>
+
+<!--    <script type="text/javascript" src="/Scripts/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="/Scripts/jquery.validate.unobtrusive.min.js"></script>-->
+
+
+</body>
+</html>
