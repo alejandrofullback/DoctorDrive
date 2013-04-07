@@ -18,10 +18,10 @@
     self.UI.Actions.changePage = function (data, evt) {
 
         var currentId = $(evt.currentTarget).data('id');
-        // SE TEM UM ID, ESCREVE O MESMO NA GLOBAL
-        var id = $(evt.currentTarget).data('name');
-        alert(currentId + "," + id);
-        //$(document).trigger('page-change', [id]);
+        var targetName = $(evt.currentTarget).data('name');
+        console.log(currentId + " " + targetName);
+        doctor_drive_globals.currentItemId = currentId;
+        $(document).trigger('page-change', [targetName]);
     };
 };
 

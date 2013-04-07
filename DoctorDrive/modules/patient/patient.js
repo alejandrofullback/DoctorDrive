@@ -1,4 +1,4 @@
-﻿HomeViewModel = function () {
+﻿PatientViewModel = function () {
     var self = this;
     self.template = "patient/html/patient";
     
