@@ -1,4 +1,4 @@
-﻿PageEvolutionModel = function () {
+﻿PatientEvolutionViewModel = function () {
     var self = this;
     self.template = "patient/html/patient-evolution";
 
@@ -7,4 +7,4 @@
     };
 };
 
-PageEvolutionModel.id = "patient-evolution";
+PatientEvolution.id = "patient-evolution";
