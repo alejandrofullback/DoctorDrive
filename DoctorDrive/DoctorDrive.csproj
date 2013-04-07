@@ -84,6 +84,8 @@
     <Content Include="modules\header\html\header.html" />
     <Content Include="modules\home\home.js" />
     <Content Include="modules\home\html\home.html" />
+    <Content Include="modules\patient\patient.js" />
+    <Content Include="modules\patient\html\patient.html" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\infuser-amd.js" />
