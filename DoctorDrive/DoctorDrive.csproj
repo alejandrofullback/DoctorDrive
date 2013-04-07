@@ -74,6 +74,7 @@
     <Content Include="Content\font-awesome-ie7.min.css" />
     <Content Include="Content\font-awesome.css" />
     <Content Include="Content\font-awesome.min.css" />
+    <Content Include="Content\images\bussiness\lung-base.jpg" />
     <Content Include="Content\images\glyphicons-halflings-white.png" />
     <Content Include="Content\images\glyphicons-halflings.png" />
     <Content Include="Content\css\reset.css" />
@@ -84,6 +85,12 @@
     <Content Include="modules\header\html\header.html" />
     <Content Include="modules\home\home.js" />
     <Content Include="modules\home\html\home.html" />
+    <Content Include="modules\patient\patient-image.js" />
+    <Content Include="modules\patient\html\patient-image.html" />
+    <Content Include="modules\patient\patient-laboratory.js" />
+    <Content Include="modules\patient\html\patient-laboratory.html" />
+    <Content Include="modules\patient\patient-evolution.js" />
+    <Content Include="modules\patient\html\patient-evolution.html" />
     <Content Include="modules\patient\patient.js" />
     <Content Include="modules\patient\html\patient.html" />
     <Content Include="Scripts\bootstrap.js" />
