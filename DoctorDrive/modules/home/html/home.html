@@ -1,5 +1,5 @@
 ﻿<h3>Resumo dos Pacientes</h3>
-<table class="table table-bordered table-striped table-hover">
+<table class="table table-bordered table-striped table-hover  table-clickable table-sticky">
     <thead>
         <tr>
             <th>Leito</th>
@@ -11,13 +11,14 @@
     <tbody>
         <!-- ko foreach: List.Items() -->
         <tr>
-            <td>
-                <span data-bind="text: leito" /></td>
-            <td>
+            <td data-name="patient" data-bind="attr: { 'data-id': id }, click: $parent.UI.Actions.changePage">
+                <span data-bind="text: leito" />
+            </td>
+            <td data-name="patient" data-bind="attr: { 'data-id': id }, click: $parent.UI.Actions.changePage">
                 <span data-bind="text: nome" /></td>
-            <td>
+            <td data-name="diagnostic" data-bind="attr: { 'data-id': id }, click: $parent.UI.Actions.changePage">
                 <span data-bind="text: diagnostico" /></td>
-            <td>
+            <td data-name="conducta" data-bind="attr: { 'data-id': id }, click: $parent.UI.Actions.changePage">
                 <span data-bind="text: conducta" /></td>
         </tr>
         <!-- /ko -->

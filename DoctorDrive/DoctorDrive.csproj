@@ -78,6 +78,7 @@
     <Content Include="Content\images\glyphicons-halflings.png" />
     <Content Include="Content\css\reset.css" />
     <Content Include="Content\css\structure.css" />
+    <Content Include="Content\style.css" />
     <Content Include="index.html" />
     <Content Include="main.js" />
     <Content Include="modules\header\header.js" />
