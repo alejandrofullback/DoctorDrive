@@ -1,58 +1,26 @@
 ﻿<h3>Resumo dos Pacientes</h3>
-<table class="table table-bordered table-striped table-hover">
+<table class="table table-bordered table-striped table-hover  table-clickable table-sticky">
     <thead>
         <tr>
-            <th>#</th>
             <th>Leito</th>
             <th>Nome</th>
             <th>Diagnóstico</th>
             <th>Conduta</th>
-            <th>Açoes</th>
         </tr>
     </thead>
     <tbody>
+        <!-- ko foreach: List.Items() -->
         <tr>
-            <td>1</td>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-            <td>@mdo</td>
-            <td class="column-actions">
-                <a class="icon-edit" title="Editar" data-name="rule-details" href="#modal-variaveis-sessao" data-toggle="modal"></a>
+            <td data-name="patient" data-bind="attr: { 'data-id': id }, click: $parent.UI.Actions.changePage">
+                <span data-bind="text: leito" />
             </td>
+            <td data-name="patient" data-bind="attr: { 'data-id': id }, click: $parent.UI.Actions.changePage">
+                <span data-bind="text: nome" /></td>
+            <td data-name="diagnostic" data-bind="attr: { 'data-id': id }, click: $parent.UI.Actions.changePage">
+                <span data-bind="text: diagnostico" /></td>
+            <td data-name="conducta" data-bind="attr: { 'data-id': id }, click: $parent.UI.Actions.changePage">
+                <span data-bind="text: conducta" /></td>
         </tr>
-        <tr>
-            <td>2</td>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
-            <td>@mdo</td>
-            <td class="column-actions">
-                <a class="icon-edit" title="Editar" data-name="rule-details" href="#modal-variaveis-sessao" data-toggle="modal"></a>
-            </td>
-        </tr>
-        <tr>
-            <td>3</td>
-            <td>Larry</td>
-            <td>the Bird</td>
-            <td>@twitter</td>
-            <td>@twitter</td>
-            <td class="column-actions">
-                <a class="icon-edit" title="Editar" data-name="rule-details" href="#modal-variaveis-sessao" data-toggle="modal"></a>
-            </td>
-        </tr>
+        <!-- /ko -->
     </tbody>
 </table>
-<div id="modal-variaveis-sessao" class="modal hide fade" role="dialog" aria-labelledby="selectSessionParametersLabel" aria-hidden="true">
-    <header class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-        <h3 id="labelTitle">Dados Do Paciente</h3>
-    </header>
-    <div class="modal-body">
-            <div data-bind="template: { name: 'patient/html/patient', data: null }">
-    </div>
-    </div>
-    <div class="modal-footer">
-        <button class="btn" data-dismiss="modal" aria-hidden="true">Fechar</button>
-    </div>
-</div>
