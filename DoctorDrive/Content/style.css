@@ -1,5 +1,0 @@
-﻿.table-clickable tbody tr{cursor:pointer;}
-.table-clickable tbody tr:hover td,
-.table-clickable tbody tr:hover th{background:#D9EDF7;}
-.table-sticky thead th{background:#fff;}
-.table-sticky thead th a:hover{text-decoration: none;}

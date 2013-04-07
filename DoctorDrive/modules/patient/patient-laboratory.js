@@ -1,4 +1,4 @@
-﻿HomeViewModel = function () {
+﻿PatientLaboratoryModel = function () {
     var self = this;
     self.template = "patient/html/patient-lab";
 
@@ -7,4 +7,4 @@
     };
 };
 
-HomeViewModel.id = "patient-lab";
+PatientLaboratoryModel.id = "patient-lab";
