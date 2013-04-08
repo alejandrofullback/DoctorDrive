@@ -2,7 +2,7 @@
     MainViewModel = function (screenId) {
         var self = this;
         
-        self.Availablescreens = ["home", "patient", "patient-evolution"];
+        self.Availablescreens = ["home", "patient", "patient-evolution", "patient-treatment", "patient-image", , "patient-image-editor"];
         self.screens = {};
         self.selectedScreen = ko.observable(null);
         self.selectedScreenId = ko.observable(null);
@@ -24,8 +24,8 @@
                     if (newValue == "patient") {
                         self.screens[newValue] = new PatientViewModel();
                     }
-                    if (newValue == "patient - treatment") {
-                        self.screens[newValue] = new PatientEvolutionViewModel();
+                    if (newValue == "patient-treatment") {
+                        self.screens[newValue] = new PatientTreatmentViewModel();
                     }
                     if (newValue == "patient-image") {
                         self.screens[newValue] = new PatientImageViewModel();
