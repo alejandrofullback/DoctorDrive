@@ -1,10 +1,10 @@
-﻿PatientLaboratoryModel = function () {
+﻿PatientLaboratoryViewModel = function () {
     var self = this;
-    self.template = "patient/html/patient-lab";
+    self.template = "patient/html/patient-laboratory";
 
     self.Actions = {};
     self.Actions.startModule = function () {
     };
 };
 
-PatientLaboratoryModel.id = "patient-lab";
+PatientLaboratoryViewModel.id = "patient-laboratory";
