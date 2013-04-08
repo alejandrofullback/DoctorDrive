@@ -6,10 +6,12 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </a>
-            <a class="brand" href="#">Doctor Drive</a>
+            <a class="brand" data-name="home" data-bind="click: $root.header.UI.Actions.changePage, css: { active: $root.selectedScreenId() == 'home' }" href="javascript:void(0)">Doctor Drive</a>
             <div class="nav-collapse">
                 <ul class="nav">
-                    <li class="active"><a href="#">Home</a></li>
+                    <li data-name="home" data-bind="click: $root.header.UI.Actions.changePage, css: { active: $root.selectedScreenId() == 'home' }">
+                        <a data-toggle="pill" href="javascript:void(0)">Home</a>
+                    </li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
