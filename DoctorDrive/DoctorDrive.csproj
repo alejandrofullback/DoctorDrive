@@ -80,6 +80,7 @@
     <Content Include="Content\css\font\FontAwesome.otf" />
     <None Include="Properties\PublishProfiles\doctordrive.pubxml" />
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />
+    <Content Include="Content\images\business\lung-base.jpg" />
     <Content Include="Content\images\glyphicons-halflings-white.png" />
     <Content Include="Content\images\glyphicons-halflings.png" />
     <Content Include="Content\css\reset.css" />
@@ -92,6 +93,9 @@
     <Content Include="modules\home\html\home.html" />
     <Content Include="modules\menu\html\menu.html" />
     <Content Include="modules\menu\menu.js" />
+    <Content Include="modules\patient\patient-image-editor.js" />
+    <Content Include="modules\patient\html\patient-image-editor.html" />
+    <Content Include="modules\patient\html\patient-treatments.html" />
     <Content Include="modules\patient\html\patient-evolution.html" />
     <Content Include="modules\patient\html\patient-image.html" />
     <Content Include="modules\patient\html\patient-laboratory.html" />
