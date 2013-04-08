@@ -7,4 +7,4 @@
     };
 };
 
-PatientEvolution.id = "patient-evolution";
+PatientEvolutionViewModel.id = "patient-evolution";

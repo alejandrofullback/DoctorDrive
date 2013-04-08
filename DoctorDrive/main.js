@@ -8,6 +8,9 @@
         self.selectedScreenId = ko.observable(null);
         self.moduleId = null;
 
+        self.menu = new MenuViewModel();
+        self.header = new HeaderViewModel();
+
         // CONTROLE DE TROCA DE PAGINAS
         self.selectedScreenId.subscribe(function (newValue) {
 
@@ -40,6 +43,13 @@
 
             // INICIA A SCREEN
             self.moduleId = newValue;
+            if (newValue === "home") {
+                self.menu.UI.Actions.showMenu(false);
+            }
+            else
+            {
+                self.menu.UI.Actions.showMenu(true);
+            }
             self.startModule(self.moduleId);
 
             self.selectedScreen(self.screens[newValue]);
