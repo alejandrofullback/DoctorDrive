@@ -3,19 +3,29 @@
 
         <div class="span12 well">
             <ul class="nav">
-                <li><a class="brand" href="#"><i class="icon  icon-list-alt"></i>Quadro Geral</a> </li>
+                <li>
+                    <a class="brand" href="#"><i class="icon  icon-list-alt"></i>Quadro Geral</a>
+                </li>
                 <li class="divider-vertical"></li>
 
-                <li><a class="brand" href="#"><i class="icon  icon-user"></i>Identificação</a> </li>
+                <li data-name="patient" data-bind="click: $root.header.UI.Actions.changePage, css: { active: $root.selectedScreenId() == 'patient' }">
+                    <a class="brand" href="#"><i class="icon  icon-user"></i>Identificação</a>
+                </li>
                 <li class="divider-vertical"></li>
 
-                <li><a class="brand" href="#"><i class="icon  icon-circle-arrow-up"></i>Evolução clínica</a></li>
+                <li data-name="patient-evolution" data-bind="click: $root.header.UI.Actions.changePage, css: { active: $root.selectedScreenId() == 'patient-evolution' }">
+                    <a class="brand" href="#"><i class="icon  icon-circle-arrow-up"></i>Evolução clínica</a>
+                </li>
                 <li class="divider-vertical"></li>
 
-                <li><a class="brand" href="#"><i class="icon  icon-eye-open"></i>Condutas</a></li>
+                <li data-name="patient-treatment" data-bind="click: $root.header.UI.Actions.changePage, css: { active: $root.selectedScreenId() == 'patient-treatment' }">
+                    <a class="brand" href="#"><i class="icon  icon-eye-open"></i>Condutas</a>
+                </li>
                 <li class="divider-vertical"></li>
 
-                <li><a class="brand" href="#"><i class="icon  icon-camera"></i>Exames</a></li>
+                <li data-name="patient-image" data-bind="click: $root.header.UI.Actions.changePage, css: { active: $root.selectedScreenId() == 'patient-image' }">
+                    <a class="brand" href="#"><i class="icon  icon-camera"></i>Exames</a>
+                </li>
             </ul>
         </div>
     </div>
