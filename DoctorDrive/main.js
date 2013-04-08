@@ -24,6 +24,9 @@
                     if (newValue == "patient") {
                         self.screens[newValue] = new PatientViewModel();
                     }
+                    if (newValue == "patient - treatment") {
+                        self.screens[newValue] = new PatientEvolutionViewModel();
+                    }
                     if (newValue == "patient-image") {
                         self.screens[newValue] = new PatientImageViewModel();
                     }
@@ -36,7 +39,6 @@
                     if (newValue == "patient-evolution") {
                         self.screens[newValue] = new PatientEvolutionViewModel();
                     }
-                    
                 }
             }
             else {
