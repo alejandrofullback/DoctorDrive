@@ -2,7 +2,7 @@
     MainViewModel = function (screenId) {
         var self = this;
         
-        self.Availablescreens = ["home", "patient", "patient-evolution", "patient-treatment", "patient-image", , "patient-image-editor"];
+        self.Availablescreens = ["home", "patient", "patient-evolution", "patient-treatment", "patient-image", "patient-laboratory", "patient-image-editor"];
         self.screens = {};
         self.selectedScreen = ko.observable(null);
         self.selectedScreenId = ko.observable(null);
