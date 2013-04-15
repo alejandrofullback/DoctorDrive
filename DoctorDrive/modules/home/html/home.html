@@ -2,6 +2,7 @@
 <table class="table table-bordered table-striped table-hover  table-clickable table-sticky">
     <thead>
         <tr>
+            <th></th>
             <th>Leito</th>
             <th>Nome</th>
             <th>Diagnóstico</th>
@@ -11,16 +12,25 @@
     <tbody>
         <!-- ko foreach: List.Items() -->
         <tr>
+            <td>
+                <input type="checkbox" id="deleteCheck" data-bind="checked:selected, click: $parent.Actions.initDeleteItem " />
+            </td>
             <td data-name="patient" data-bind="attr: { 'data-id': id }, click: $parent.UI.Actions.changePage">
                 <span data-bind="text: leito" />
+                <button class="btn btn-danger btn-mini" data-bind="visible: deleting, click: $parent.Actions.confirmDeleteItem">Dar de Alta</button>
             </td>
             <td data-name="patient" data-bind="attr: { 'data-id': id }, click: $parent.UI.Actions.changePage">
                 <span data-bind="text: nome" /></td>
             <td data-name="patient-evolution" data-bind="attr: { 'data-id': id }, click: $parent.UI.Actions.changePage">
                 <span data-bind="text: diagnostico" /></td>
             <td data-name="patient-treatment" data-bind="attr: { 'data-id': id }, click: $parent.UI.Actions.changePage">
-                <span data-bind="text: conducta" /></td>
+                <span data-bind="text: conducta" />
+            </td>
         </tr>
         <!-- /ko -->
     </tbody>
 </table>
+<div>
+    <button class="btn" data-bind="click: Actions.tryAddItem">Adicionar Leito</button>
+    <!--<button class="btn btn-danger" data-bind="click:Actions.tryDeleteItem">Dar de Alta</button>-->
+</div>
