@@ -75,7 +75,12 @@
     <Content Include="Content\css\font\FontAwesome.otf" />
     <None Include="Properties\PublishProfiles\doctordrive.pubxml" />
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />
+    <Content Include="Content\images\business\cond.png" />
+    <Content Include="Content\images\business\evolcli.png" />
+    <Content Include="Content\images\business\examen3.png" />
+    <Content Include="Content\images\business\information.png" />
     <Content Include="Content\images\business\lung-base.jpg" />
+    <Content Include="Content\images\business\quadrogral.png" />
     <Content Include="Content\images\glyphicons-halflings-white.png" />
     <Content Include="Content\images\glyphicons-halflings.png" />
     <Content Include="Content\css\reset.css" />
