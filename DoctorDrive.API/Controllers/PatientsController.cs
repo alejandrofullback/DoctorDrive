@@ -53,13 +53,14 @@ namespace DoctorDrive.API.Controllers
 
 
         [HttpPost]
-        public void Create(PatientItem createdItem)
+        public PatientItem Create(PatientItem createdItem)
         {
             Patient item = _mapper.Map<PatientItem, Patient>(createdItem);
             Person person = _mapper.Map<PatientItem, Person>(createdItem);
             _personRepository.Add(person);
             item.Id = person.Id;
             _patientRepository.Add(item);
+            return GetById(item.Id);
         }
 
         [HttpPut]
