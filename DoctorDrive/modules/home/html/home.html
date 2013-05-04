@@ -13,7 +13,7 @@
         <!-- ko foreach: List.Items() -->
         <tr>
             <td>
-                <input type="checkbox" id="deleteCheck" data-bind="checked:selected, click: $parent.Actions.initDeleteItem " />
+                <input type="checkbox" id="deleteCheck" data-bind="checked:selected, click: $parent.Actions.initDeleteItem" />
             </td>
             <td data-name="patient" data-bind="attr: { 'data-id': id }, click: $parent.UI.Actions.changePage">
                 <span data-bind="text: leito" />
@@ -31,6 +31,6 @@
     </tbody>
 </table>
 <div>
-    <button class="btn" data-bind="click: Actions.tryAddItem">Adicionar Leito</button>
+    <button class="btn"data-name="patient" data-bind="click: UI.Actions.changePage">Adicionar Paciente</button>
     <!--<button class="btn btn-danger" data-bind="click:Actions.tryDeleteItem">Dar de Alta</button>-->
 </div>
