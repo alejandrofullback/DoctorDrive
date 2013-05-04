@@ -98,7 +98,6 @@
     <Content Include="Content\css\font\fontawesome-webfont.woff" />
     <Content Include="Content\css\font\FontAwesome.otf" />
     <None Include="Properties\PublishProfiles\doctordrive.pubxml" />
-    <None Include="Scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="Content\images\business\cond.png" />
     <Content Include="Content\images\business\evolcli.png" />
     <Content Include="Content\images\business\examen3.png" />
@@ -137,8 +136,9 @@
     <Content Include="Scripts\infuser.js" />
     <Content Include="Scripts\infuser.min.gz.js" />
     <Content Include="Scripts\infuser.min.js" />
-    <Content Include="Scripts\jquery-1.9.1.js" />
-    <Content Include="Scripts\jquery-1.9.1.min.js" />
+    <None Include="Scripts\jquery-2.0.0.intellisense.js" />
+    <Content Include="Scripts\jquery-2.0.0.js" />
+    <Content Include="Scripts\jquery-2.0.0.min.js" />
     <Content Include="Scripts\knockout-2.2.1.debug.js" />
     <Content Include="Scripts\knockout-2.2.1.js" />
     <Content Include="Scripts\knockout.mapping-latest.debug.js" />
@@ -151,6 +151,7 @@
     <Content Include="Scripts\koExternalTemplateEngine.min.js" />
     <Content Include="Scripts\koExternalTemplateEngine_all.js" />
     <Content Include="Scripts\koExternalTemplateEngine_all.min.js" />
+    <Content Include="Scripts\pt-BR.js" />
     <Content Include="Scripts\TrafficCop-amd.js" />
     <Content Include="Scripts\TrafficCop-amd.min.gz.js" />
     <Content Include="Scripts\TrafficCop-amd.min.js" />
@@ -159,13 +160,13 @@
     <Content Include="Scripts\TrafficCop.min.js" />
     <Content Include="util.js" />
     <Content Include="Web.config" />
-    <Content Include="Scripts\jquery-1.9.1.min.map" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
+    <Content Include="Scripts\jquery-2.0.0.min.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

@@ -30,13 +30,15 @@
         var currentId = $(evt.currentTarget).data('id');
         var targetName = $(evt.currentTarget).data('name');
         console.log(currentId + " " + targetName);
-        doctor_drive_globals.currentItemId = currentId;
+        if (currentId)
+            doctor_drive_globals.currentItemId = currentId;
         $(document).trigger('page-change', [targetName]);
     };
 
-    self.Actions.tryAddItem = function (data, evt) {
-        self.List.Items.push({ selected: false, id: "", leito: "", nome: "", diagnostico: "", conducta: "", deleting: ko.observable(false) });
-    };
+    //self.Actions.tryAddItem = function (data, evt) {
+
+    //    self.List.Items.push({ selected: false, id: "", leito: "", nome: "", diagnostico: "", conducta: "", deleting: ko.observable(false) });
+    //};
 
     self.Actions.initDeleteItem = function (data, evt) {
         data.deleting(data.selected);

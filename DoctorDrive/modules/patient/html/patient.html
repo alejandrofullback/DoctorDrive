@@ -1,183 +1,197 @@
-﻿<form class="form-horizontal">
-    <fieldset>
-        <legend></legend>
+﻿<fieldset>
+    <legend></legend>
+    <!-- Text input-->
 
-        <!-- Text input-->
-        <div class="control-group">
-            <label class="control-label">Nome</label>
-            <div class="controls">
-                <input name="textinput_Name" type="text" placeholder="Luiz Souza" class="input-xlarge" required="">
-                <p class="help-block"></p>
-            </div>
-        </div>
-
-        <!-- Text input-->
-        <div class="control-group">
-            <label class="control-label">Prontuário</label>
-            <div class="controls">
-                <input name="textinput_prontuary" type="text" placeholder="Informação prontuario" class="input-xlarge" required="">
-                <p class="help-block"></p>
-            </div>
-        </div>
-
-        <!-- Text input-->
-        <div class="control-group">
-            <label class="control-label">Data de Nascimento</label>
-            <div class="controls">
-                <input name="textinput_DateOfBirth" type="text" placeholder="01/01/1990" class="input-xlarge" required="">
-                <p class="help-block"></p>
-            </div>
-        </div>
-
-        <!-- Multiple Radios -->
-        <div class="control-group">
-            <label class="control-label">Sexo</label>
-            <div class="controls">
-                <label class="radio">
-                    <input type="radio" name="radios_gender" value="M" checked="checked">
-                    M
-                </label>
-                <label class="radio">
-                    <input type="radio" name="radios_gender" value="F">
-                    F
-                </label>
-            </div>
-        </div>
-
-        <!-- Text input-->
-        <div class="control-group">
-            <label class="control-label">Data de entrada na unidade</label>
-            <div class="controls">
-                <input name="textinput_arrivalDate" type="text" placeholder="01/12/2012" class="input-xlarge" required="">
-                <p class="help-block"></p>
-            </div>
-        </div>
-
-        <!-- Text input-->
-        <div class="control-group">
-            <label class="control-label">Diagnóstico principal</label>
-            <div class="controls">
-                <input name="textinput_diagnostic" type="text" placeholder="estável" class="input-xlarge" required="">
-                <p class="help-block"></p>
-            </div>
-        </div>
-
-        <!-- Multiple Checkboxes -->
-        <div class="control-group">
-            <label class="control-label">Comorbidades</label>
-            <div class="controls">
-                <label class="checkbox">
-                    <input type="checkbox" name="checkboxes_comorbities" value="HAS">
-                    HAS
-                </label>
-                <label class="checkbox">
-                    <input type="checkbox" name="checkboxes_comorbities" value="DM">
-                    DM
-                </label>
-                <label class="checkbox">
-                    <input type="checkbox" name="checkboxes_comorbities" value="AVE">
-                    AVE
-                </label>
-                <label class="checkbox">
-                    <input type="checkbox" name="checkboxes_comorbities" value="DAC">
-                    DAC
-                </label>
-                <label class="checkbox">
-                    <input type="checkbox" name="checkboxes_comorbities" value="ICC">
-                    ICC
-                </label>
-                <label class="checkbox">
-                    <input type="checkbox" name="checkboxes_comorbities" value="Arteriopatia periférica">
-                    Arteriopatia periférica
-                </label>
-                <label class="checkbox">
-                    <input type="checkbox" name="checkboxes_comorbities" value="DPOC">
-                    DPOC
-                </label>
-                <label class="checkbox">
-                    <input type="checkbox" name="checkboxes_comorbities" value="IRC">
-                    IRC
-                </label>
-                <label class="checkbox">
-                    <input type="checkbox" name="checkboxes_comorbities" value="Cirrose Hepática">
-                    Cirrose Hepática
-                </label>
-                <label class="checkbox">
-                    <input type="checkbox" name="checkboxes_comorbities" value="Demência">
-                    Demência
-                </label>
-                <label class="checkbox">
-                    <input type="checkbox" name="checkboxes_comorbities" value="SIDA">
-                    SIDA
-                </label>
-                <label class="checkbox">
-                    <input type="checkbox" name="checkboxes_comorbities" value="Neoplasia">
-                    Neoplasia
-                </label>
-                <label class="checkbox">
-                    <input type="checkbox" name="checkboxes_comorbities" value="Outra">
-                    Outra
-                </label>
-            </div>
-        </div>
-
-        <!-- Text input-->
-        <div class="control-group">
-            <label class="control-label">Alergias</label>
-            <div class="controls">
-                <input name="textinput_alergies" type="text" placeholder="Digite aqui" class="input-xlarge">
-                <p class="help-block"></p>
-            </div>
-        </div>
-
-        <!-- Multiple Radios -->
-        <div class="control-group">
-            <label class="control-label">Interação recente</label>
-            <div class="controls">
-                <label class="radio">
-                    <input type="radio" name="radios_internal" value="Sim" checked="checked">
-                    Sim
-                </label>
-                <label class="radio">
-                    <input type="radio" name="radios_internal" value="Não">
-                    Não
-                </label>
-            </div>
-        </div>
-
-        <!-- Text input-->
-        <div class="control-group">
-            <label class="control-label">Contato Familiar</label>
-            <div class="controls">
-                <input name="textinput_contato" type="text" placeholder="Isabel Souza" class="input-xlarge" required="">
-                <p class="help-block"></p>
-            </div>
-        </div>
-
-
-        <!-- Text input-->
-        <div class="control-group">
-            <label class="control-label">Medico assistente</label>
-            <div class="controls">
-                <input type="text" placeholder="Andre Campos" class="input-xlarge">
-                <p class="help-block"></p>
-            </div>
-        </div>
-
-        <!-- Text input-->
-        <div class="control-group">
-            <label class="control-label">Telefone Medico</label>
-            <div class="controls">
-                <input type="text" placeholder="(021) 8888 88888" class="input-xlarge">
-                <p class="help-block"></p>
-            </div>
-        </div>
-
-        <!-- Button (Double) -->
-        <div class="control-group pagination-centered">
-            <button name="button-save-patient" class="btn btn-success">Salvar</button>
-            <button name="button-reset" type="reset" class="btn btn-danger">Cancelar</button>
+    <div class="control-group">
+        <label class="control-label">Leito</label>
+        <div class="controls">
+            <input name="textinput_Name" type="text" placeholder="Nome do Paciente" class="input-xlarge" data-bind="value:patient.bed">
             <p class="help-block"></p>
         </div>
-    </fieldset>
-</form>
+    </div>
+
+    <div class="control-group">
+        <label class="control-label">Nome</label>
+        <div class="controls">
+            <input name="textinput_Name" type="text" placeholder="Nome do Paciente" class="input-xlarge" data-bind="value:patient.name">
+            <p class="help-block"></p>
+        </div>
+    </div>
+
+    <!-- Text input-->
+    <div class="control-group">
+        <label class="control-label">Prontuário</label>
+        <div class="controls">
+            <input name="textinput_prontuary" type="text" placeholder="Informação prontuario" class="input-xlarge" data-bind="value:patient.prontuary">
+            <p class="help-block"></p>
+        </div>
+    </div>
+
+    <!-- Text input-->
+    <div class="control-group">
+        <label class="control-label">Data de Nascimento</label>
+        <div class="controls">
+            <input name="textinput_DateOfBirth" type="date" class="input-xlarge" data-bind="value:patient.birthday">
+            <p class="help-block"></p>
+        </div>
+    </div>
+
+     <div class="control-group">
+        <label class="control-label">Peso</label>
+        <div class="controls">
+            <input name="textinput_DateOfBirth" type="text" class="input-xlarge" data-bind="value:patient.weight">
+            <p class="help-block"></p>
+        </div>
+    </div>
+
+    <!-- Multiple Radios -->
+    <div class="control-group">
+        <label class="control-label">Sexo</label>
+        <div class="controls">
+            <label class="radio">
+                <input type="radio" name="radios_gender" value="M" checked="checked" data-bind="checked:patient.isfemale">
+                M
+            </label>
+            <label class="radio">
+                <input type="radio" name="radios_gender" value="F" data-bind="checked:!patient.isfemale">
+                F
+            </label>
+        </div>
+    </div>
+
+    <!-- Text input-->
+    <div class="control-group">
+        <label class="control-label">Data de entrada na unidade</label>
+        <div class="controls">
+            <input name="textinput_arrivalDate" type="date" class="input-xlarge" data-bind="value:patient.arrivaldate">
+            <p class="help-block"></p>
+        </div>
+    </div>
+
+    <!-- Text input-->
+    <div class="control-group">
+        <label class="control-label">Diagnóstico principal</label>
+        <div class="controls">
+            <input name="textinput_diagnostic" type="text" placeholder="Diagnóstico principal" class="input-xlarge" data-bind="value:patient.initialdiagnostic">
+            <p class="help-block"></p>
+        </div>
+    </div>
+
+    <!-- Multiple Checkboxes -->
+    <div class="control-group">
+        <label class="control-label">Comorbidades</label>
+        <div class="controls">
+            <label class="checkbox">
+                <input type="checkbox" name="checkboxes_comorbities" value="HAS">
+                HAS
+            </label>
+            <label class="checkbox">
+                <input type="checkbox" name="checkboxes_comorbities" value="DM">
+                DM
+            </label>
+            <label class="checkbox">
+                <input type="checkbox" name="checkboxes_comorbities" value="AVE">
+                AVE
+            </label>
+            <label class="checkbox">
+                <input type="checkbox" name="checkboxes_comorbities" value="DAC">
+                DAC
+            </label>
+            <label class="checkbox">
+                <input type="checkbox" name="checkboxes_comorbities" value="ICC">
+                ICC
+            </label>
+            <label class="checkbox">
+                <input type="checkbox" name="checkboxes_comorbities" value="Arteriopatia periférica">
+                Arteriopatia periférica
+            </label>
+            <label class="checkbox">
+                <input type="checkbox" name="checkboxes_comorbities" value="DPOC">
+                DPOC
+            </label>
+            <label class="checkbox">
+                <input type="checkbox" name="checkboxes_comorbities" value="IRC">
+                IRC
+            </label>
+            <label class="checkbox">
+                <input type="checkbox" name="checkboxes_comorbities" value="Cirrose Hepática">
+                Cirrose Hepática
+            </label>
+            <label class="checkbox">
+                <input type="checkbox" name="checkboxes_comorbities" value="Demência">
+                Demência
+            </label>
+            <label class="checkbox">
+                <input type="checkbox" name="checkboxes_comorbities" value="SIDA">
+                SIDA
+            </label>
+            <label class="checkbox">
+                <input type="checkbox" name="checkboxes_comorbities" value="Neoplasia">
+                Neoplasia
+            </label>
+            <label class="checkbox">
+                <input type="checkbox" name="checkboxes_comorbities" value="Outra">
+                Outra
+            </label>
+        </div>
+    </div>
+
+    <!-- Text input-->
+    <div class="control-group">
+        <label class="control-label">Alergias</label>
+        <div class="controls">
+            <input name="textinput_alergies" type="text" placeholder="Digite aqui" class="input-xlarge">
+            <p class="help-block"></p>
+        </div>
+    </div>
+
+    <!-- Multiple Radios -->
+    <div class="control-group">
+        <label class="control-label">Interação recente</label>
+        <div class="controls">
+            <label class="radio">
+                <input type="radio" name="radios_internal" value="Sim" checked="checked">
+                Sim
+            </label>
+            <label class="radio">
+                <input type="radio" name="radios_internal" value="Não">
+                Não
+            </label>
+        </div>
+    </div>
+
+    <!-- Text input-->
+    <div class="control-group">
+        <label class="control-label">Contato Familiar</label>
+        <div class="controls">
+            <input name="textinput_contato" type="text" placeholder="Escreva o Contacto Familiar" class="input-xlarge" data-bind="value:patient.contactname">
+            <p class="help-block"></p>
+        </div>
+    </div>
+
+
+    <!-- Text input-->
+    <div class="control-group">
+        <label class="control-label">Medico assistente</label>
+        <div class="controls">
+            <input type="text" placeholder="" class="input-xlarge" data-bind="value:patient.doctor.name">
+            <p class="help-block"></p>
+        </div>
+    </div>
+
+    <!-- Text input-->
+    <div class="control-group">
+        <label class="control-label">Telefone Medico</label>
+        <div class="controls">
+            <input type="text" placeholder="" class="input-xlarge" data-bind="value:patient.doctor.phone">
+            <p class="help-block"></p>
+        </div>
+    </div>
+
+    <!-- Button (Double) -->
+    <div class="control-group pagination-centered">
+        <button name="button-save-patient" type="submit" class="btn btn-success" data-bind="click:Actions.trySavePatientDetails">Salvar</button>
+        <button name="button-reset" type="reset" class="btn btn-danger">Cancelar</button>
+        <p class="help-block"></p>
+    </div>
+</fieldset>

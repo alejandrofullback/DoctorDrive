@@ -4,7 +4,7 @@
         
         self.Availablescreens = ["home", "patient", "patient-evolution", "patient-treatment", "patient-image", "patient-laboratory", "patient-image-editor"];
         self.screens = {};
-        self.selectedScreen = ko.observable(null);
+        self.selectedScreen = ko.observable(null);http://localhost:51348/main.js
         self.selectedScreenId = ko.observable(null);
         self.moduleId = null;
 
