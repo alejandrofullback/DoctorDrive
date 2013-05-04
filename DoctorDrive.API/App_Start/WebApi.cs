@@ -1,4 +1,5 @@
 ﻿using System.Web.Http;
+using System.Web.Http.Cors;
 using DoctorDrive.API.Filters;
 
 namespace DoctorDrive.API.App_Start
@@ -15,6 +16,7 @@ namespace DoctorDrive.API.App_Start
                 new { id = RouteParameter.Optional });
 
             configuration.Filters.Add(new UnhandledExceptionAttribute());
+            configuration.EnableCors();
         }
     }
 }
