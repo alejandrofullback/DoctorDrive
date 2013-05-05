@@ -168,12 +168,20 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="bemvindo.html" />
     <Content Include="Content\css\bootstrap-responsive.css" />
     <Content Include="Content\css\bootstrap-responsive.min.css" />
     <Content Include="Content\css\bootstrap.css" />
     <Content Include="Content\css\bootstrap.min.css" />
+    <Content Include="Content\css\font\font-awesome-ie7.min.css" />
+    <Content Include="Content\css\font\font-awesome.css" />
+    <Content Include="Content\css\font\font-awesome.min.css" />
+    <Content Include="Content\css\font\fontawesome-webfont.svg" />
     <Content Include="Content\css\images\glyphicons-halflings-white.png" />
     <Content Include="Content\css\images\glyphicons-halflings.png" />
+    <Content Include="Content\css\reset.css" />
+    <Content Include="Content\css\structure.css" />
+    <Content Include="Content\css\style.css" />
     <Content Include="Global.asax" />
     <Content Include="Areas\HelpPage\Views\Help\Api.cshtml" />
     <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ApiGroup.cshtml" />
@@ -187,11 +195,66 @@
     <Content Include="Areas\HelpPage\Views\Shared\_Layout.cshtml" />
     <Content Include="Areas\HelpPage\Views\Web.config" />
     <Content Include="Areas\HelpPage\Views\_ViewStart.cshtml" />
+    <Content Include="Content\css\font\fontawesome-webfont.eot" />
+    <Content Include="Content\css\font\fontawesome-webfont.ttf" />
+    <Content Include="Content\css\font\fontawesome-webfont.woff" />
+    <Content Include="Content\css\font\FontAwesome.otf" />
     <None Include="Content\js\jquery-1.9.1.intellisense.js" />
     <Content Include="Content\js\bootstrap.js" />
     <Content Include="Content\js\bootstrap.min.js" />
     <Content Include="Content\js\jquery-1.9.1.js" />
     <Content Include="Content\js\jquery-1.9.1.min.js" />
+    <Content Include="index.html" />
+    <Content Include="main.js" />
+    <Content Include="Modules\Header\header.js" />
+    <Content Include="Modules\Header\html\header.html" />
+    <Content Include="Modules\home\home.js" />
+    <Content Include="Modules\home\html\home.html" />
+    <Content Include="Modules\menu\html\menu.html" />
+    <Content Include="Modules\menu\menu.js" />
+    <Content Include="Modules\patient\html\patient-evolution.html" />
+    <Content Include="Modules\patient\html\patient-image-editor.html" />
+    <Content Include="Modules\patient\html\patient-image.html" />
+    <Content Include="Modules\patient\html\patient-laboratory.html" />
+    <Content Include="Modules\patient\html\patient-treatment.html" />
+    <Content Include="Modules\patient\html\patient.html" />
+    <Content Include="Modules\patient\patient-evolution.js" />
+    <Content Include="Modules\patient\patient-image-editor.js" />
+    <Content Include="Modules\patient\patient-image.js" />
+    <Content Include="Modules\patient\patient-laboratory.js" />
+    <Content Include="Modules\patient\patient-treatment.js" />
+    <Content Include="Modules\patient\patient.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\infuser-amd.js" />
+    <Content Include="Scripts\infuser-amd.min.gz.js" />
+    <Content Include="Scripts\infuser-amd.min.js" />
+    <Content Include="Scripts\infuser.js" />
+    <Content Include="Scripts\infuser.min.gz.js" />
+    <Content Include="Scripts\infuser.min.js" />
+    <None Include="Scripts\jquery-2.0.0.intellisense.js" />
+    <Content Include="Scripts\jquery-2.0.0.js" />
+    <Content Include="Scripts\jquery-2.0.0.min.js" />
+    <Content Include="Scripts\knockout-2.2.1.debug.js" />
+    <Content Include="Scripts\knockout-2.2.1.js" />
+    <Content Include="Scripts\knockout.mapping-latest.debug.js" />
+    <Content Include="Scripts\knockout.mapping-latest.js" />
+    <Content Include="Scripts\knockout.validation.debug.js" />
+    <Content Include="Scripts\knockout.validation.js" />
+    <Content Include="Scripts\koExternalTemplateEngine-amd.js" />
+    <Content Include="Scripts\koExternalTemplateEngine-amd.min.js" />
+    <Content Include="Scripts\koExternalTemplateEngine.js" />
+    <Content Include="Scripts\koExternalTemplateEngine.min.js" />
+    <Content Include="Scripts\koExternalTemplateEngine_all.js" />
+    <Content Include="Scripts\koExternalTemplateEngine_all.min.js" />
+    <Content Include="Scripts\pt-BR.js" />
+    <Content Include="Scripts\TrafficCop-amd.js" />
+    <Content Include="Scripts\TrafficCop-amd.min.gz.js" />
+    <Content Include="Scripts\TrafficCop-amd.min.js" />
+    <Content Include="Scripts\TrafficCop.js" />
+    <Content Include="Scripts\TrafficCop.min.gz.js" />
+    <Content Include="Scripts\TrafficCop.min.js" />
+    <Content Include="util.js" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -246,6 +309,7 @@
     <Content Include="Views\Web.config" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Content\js\jquery-1.9.1.min.map" />
+    <Content Include="Scripts\jquery-2.0.0.min.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

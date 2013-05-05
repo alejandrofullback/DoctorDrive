@@ -1,0 +1,20 @@
+﻿<div class="navbar">
+    <div class="navbar-inner">
+        <div class="container" style="width: auto;">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </a>
+            <a class="brand" data-name="home" data-bind="click: $root.header.UI.Actions.changePage, css: { active: $root.selectedScreenId() == 'home' }" href="javascript:void(0)">Doctor Drive</a>
+            <div class="nav-collapse">
+                <ul class="nav">
+                    <li data-name="home" data-bind="click: $root.header.UI.Actions.changePage, css: { active: $root.selectedScreenId() == 'home' }">
+                        <a data-toggle="pill" href="javascript:void(0)">Home</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <title>Doctor Drive</title>
+</head>
+<link href="Content/css/bootstrap.css" rel="stylesheet" />
+<link href="Content/css/bootstrap-responsive.css" rel="stylesheet" />
+<link href="Content/css/font/font-awesome.min.css" rel="stylesheet" />
+<link href="Content/css/style.css" rel="stylesheet" />
+<body>
+    <div data-bind="template: { name: 'header/html/header' }"></div>
+    <div data-bind="visible: menu.showMenu, template: { name: 'menu/html/menu',data: menu }"></div>
+    <div class="container-fluid">
+        <div data-bind="template: { name: selectedScreen() ? selectedScreen().template : '', data: selectedScreen() }"></div>
+    </div>
+
+    <script type='text/javascript' src="Scripts/jquery-2.0.0.js"></script>
+    <script type='text/javascript' src="Scripts/bootstrap.js"></script>
+    <script type='text/javascript' src="Scripts/knockout-2.2.1.js"></script>
+    <script type='text/javascript' src="Scripts/knockout.mapping-latest.js"></script>
+    <script type='text/javascript' src="Scripts/koExternalTemplateEngine_all.js"></script>
+    <script type='text/javascript' src="Scripts/knockout.validation.js"></script>
+    <script type='text/javascript' src="Scripts/pt-BR.js"></script>
+    <script type='text/javascript' src="modules/patient/patient-treatment.js"></script>
+    <script type='text/javascript' src="modules/patient/patient-image.js"></script>
+    <script type='text/javascript' src="modules/patient/patient-image-editor.js"></script>
+    <script type='text/javascript' src="modules/patient/patient-evolution.js"></script>
+    <script type='text/javascript' src="modules/patient/patient-laboratory.js"></script>
+    <script type='text/javascript' src="modules/patient/patient.js"></script>
+    <script type='text/javascript' src="modules/header/header.js"></script>
+    <script type='text/javascript' src="modules/menu/menu.js"></script>
+    <script type='text/javascript' src="modules/home/home.js"></script>
+
+    <script type='text/javascript' src="main.js"></script>
+    <script type='text/javascript' src="util.js"></script>
+</body>
+</html>

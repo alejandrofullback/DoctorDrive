@@ -16,7 +16,7 @@ namespace DoctorDrive.API.App_Start
                 new { id = RouteParameter.Optional });
 
             configuration.Filters.Add(new UnhandledExceptionAttribute());
-            configuration.EnableCors(new EnableCorsAttribute("http://example.com,http://doctordrive.eptecno.com", "POST,PUT,DELETE,GET", "POST,PUT,DELETE,GET"));
+            configuration.EnableCors();
         }
     }
 }
