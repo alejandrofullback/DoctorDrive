@@ -2,7 +2,7 @@
     var self = this;
     self.template = "patient/html/patient";
     self.patient = {};
-    self.patient.bed = ko.observable();
+    self.patient.bed = ko.observable().extend({ required: true });;
     self.patient.name = ko.observable();
     self.patient.prontuary = ko.observable();
     self.patient.birthday = ko.observable();
@@ -14,6 +14,8 @@
     //self.patient.alergies = ko.observable();
     //self.patient.recentlyinterned = ko.observable();
     self.patient.contactname = ko.observable();
+    self.patient.isactive = true;
+    self.patient.code = "kldfhoo;ejfhue";
     self.patient.doctor = {};
     self.patient.doctor.name = ko.observable();
     self.patient.doctor.phone = ko.observable();
@@ -45,8 +47,10 @@
     };
 
     self.Actions.trySavePatientDetails = function (data) {
+        //ko.validatedObservable(self.patient.bed());
         var patientData = ko.toJSON(self.patient);
         $.ajax({
+            crossDomain:true,
             type: "POST",
             url: "http://doctor.eptecno.com/api/patients",
             data: patientData,
