@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Web.Http;
+using System.Web.Http.Cors;
 using DoctorDrive.API.Filters;
 using DoctorDrive.API.Transport.DTO;
 using DoctorDrive.Repository.IRepository;
@@ -9,6 +10,7 @@ using Macaco.Infraestructure.Mapping;
 
 namespace DoctorDrive.API.Controllers
 {
+    //[EnableCors("http://example.com,http://webapisample.azurewebsites.net", "","POST,PUT,DELETE,GET", 255000000, true)]
     public class PatientsController : BaseController
     {
         private readonly IMapper _mapper;

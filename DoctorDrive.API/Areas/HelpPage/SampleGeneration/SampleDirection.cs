@@ -1,4 +1,4 @@
-namespace MvcApplication1.Areas.HelpPage
+namespace DoctorDrive.API.Areas.HelpPage.SampleGeneration
 {
     /// <summary>
     /// Indicates whether the sample is used for request or response

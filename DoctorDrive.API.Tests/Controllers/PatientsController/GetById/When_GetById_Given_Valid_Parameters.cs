@@ -17,7 +17,7 @@ namespace DoctorDrive.API.Tests.Controllers.PatientsController.GetById
         public void Returns_Valid_Patient()
         {
             // Arrange 
-            AutoMapperBootStrapper.Configure();
+            AutoMapperConfig.Configure();
             IMapper mapper = new AutoMapperService();
             IPatientRepository patientRepository = new PatientRepository();
             IPersonRepository personRepository = new PersonRepository();

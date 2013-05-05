@@ -41,6 +41,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Antlr3.Runtime, Version=3.3.1.7705, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\WebGrease.1.3.0\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
     <Reference Include="AutoMapper">
       <HintPath>..\packages\AutoMapper.2.2.1\lib\net40\AutoMapper.dll</HintPath>
     </Reference>
@@ -95,11 +99,11 @@
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Net.Http">
     </Reference>
+    <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.0.0-alpha-130503\lib\net45\System.Web.Helpers.dll</HintPath>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.0.0-alpha-130504\lib\net45\System.Web.Helpers.dll</HintPath>
     </Reference>
-    <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Web.Http, Version=5.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.0.0-alpha-130503\lib\net45\System.Web.Http.dll</HintPath>
@@ -124,19 +128,19 @@
     </Reference>
     <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Microsoft.AspNet.Razor.3.0.0-alpha-130503\lib\net45\System.Web.Razor.dll</HintPath>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.0.0-alpha-130504\lib\net45\System.Web.Razor.dll</HintPath>
     </Reference>
     <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.0.0-alpha-130503\lib\net45\System.Web.WebPages.dll</HintPath>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.0.0-alpha-130504\lib\net45\System.Web.WebPages.dll</HintPath>
     </Reference>
     <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.0.0-alpha-130503\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.0.0-alpha-130504\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
     </Reference>
     <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.0.0-alpha-130503\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.0.0-alpha-130504\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
     </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Web" />
@@ -155,26 +159,57 @@
     <Reference Include="System.Web.Providers">
       <HintPath>..\packages\Microsoft.AspNet.Providers.Core.1.2\lib\net40\System.Web.Providers.dll</HintPath>
     </Reference>
+    <Reference Include="WebActivatorEx">
+      <HintPath>..\packages\WebActivatorEx.2.0.1\lib\net40\WebActivatorEx.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease, Version=1.3.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\WebGrease.1.3.0\lib\WebGrease.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\css\bootstrap-responsive.css" />
+    <Content Include="Content\css\bootstrap-responsive.min.css" />
+    <Content Include="Content\css\bootstrap.css" />
+    <Content Include="Content\css\bootstrap.min.css" />
+    <Content Include="Content\css\images\glyphicons-halflings-white.png" />
+    <Content Include="Content\css\images\glyphicons-halflings.png" />
     <Content Include="Global.asax" />
+    <Content Include="Areas\HelpPage\Views\Help\Api.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ApiGroup.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\HelpPageApiModel.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ImageSample.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\InvalidSample.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\Parameters.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\Samples.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\TextSample.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\Index.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Shared\_Layout.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Web.config" />
+    <Content Include="Areas\HelpPage\Views\_ViewStart.cshtml" />
+    <None Include="Content\js\jquery-1.9.1.intellisense.js" />
+    <Content Include="Content\js\bootstrap.js" />
+    <Content Include="Content\js\bootstrap.min.js" />
+    <Content Include="Content\js\jquery-1.9.1.js" />
+    <Content Include="Content\js\jquery-1.9.1.min.js" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\AutoMapperBootStrapper.cs" />
+    <Compile Include="App_Start\BootstrapBundleConfig.cs" />
     <Compile Include="App_Start\NinjectDependencyResolver.cs" />
     <Compile Include="App_Start\NinjectDependencyScope.cs" />
     <Compile Include="App_Start\NinjectEventContainer.cs" />
     <Compile Include="App_Start\NinjectWebCommon.cs" />
-    <Compile Include="App_Start\Route.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\BaseController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\PatientsController.cs" />
     <Compile Include="Filters\NotFoundException.cs" />
     <Compile Include="Filters\UnhandledExceptionAttribute.cs" />
-    <Compile Include="App_Start\WebApi.cs" />
+    <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -205,6 +240,12 @@
       <SubType>Designer</SubType>
     </Content>
     <None Include="Properties\PublishProfiles\doctordrive.api.pubxml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Content\js\jquery-1.9.1.min.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -212,7 +253,9 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Areas\HelpPage\Content\" />
+  </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DoctorDrive.Repository\DoctorDrive.Repository.csproj">
       <Project>{B5FB1498-4399-4839-B336-F502DCA9ACE9}</Project>

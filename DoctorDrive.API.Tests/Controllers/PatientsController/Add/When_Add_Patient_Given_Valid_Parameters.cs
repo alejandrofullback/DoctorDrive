@@ -15,7 +15,7 @@ namespace DoctorDrive.API.Tests.Controllers.PatientsController.Add
         public void Successfully_Add_New_Patient()
         {
             // Arrange 
-            AutoMapperBootStrapper.Configure();
+            AutoMapperConfig.Configure();
             IMapper mapper = new AutoMapperService();
             IPatientRepository patientRepository = new PatientRepository();
             IPersonRepository personRepository = new PersonRepository();

@@ -7,7 +7,9 @@ using System.Linq;
 using System.Net.Http.Headers;
 using System.Web.Http;
 using System.Web.Http.Description;
-using MvcApplication1.Areas.HelpPage.Models;
+using DoctorDrive.API.Areas.HelpPage;
+using DoctorDrive.API.Areas.HelpPage.Models;
+using DoctorDrive.API.Areas.HelpPage.SampleGeneration;
 
 namespace MvcApplication1.Areas.HelpPage
 {

@@ -6,7 +6,7 @@ using DoctorDrive.Repository.Model;
 
 namespace DoctorDrive.API.App_Start
 {
-    public class AutoMapperBootStrapper
+    public class AutoMapperConfig
     {
         public static void Configure()
         {

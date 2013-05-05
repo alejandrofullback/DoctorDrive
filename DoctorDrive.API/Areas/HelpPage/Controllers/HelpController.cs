@@ -1,9 +1,10 @@
 using System;
 using System.Web.Http;
 using System.Web.Mvc;
-using MvcApplication1.Areas.HelpPage.Models;
+using DoctorDrive.API.Areas.HelpPage.Models;
+using MvcApplication1.Areas.HelpPage;
 
-namespace MvcApplication1.Areas.HelpPage.Controllers
+namespace DoctorDrive.API.Areas.HelpPage.Controllers
 {
     /// <summary>
     /// The controller that will handle requests for the help page.

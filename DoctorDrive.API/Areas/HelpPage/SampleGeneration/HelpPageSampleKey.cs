@@ -2,8 +2,9 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Net.Http.Headers;
+using MvcApplication1.Areas.HelpPage;
 
-namespace MvcApplication1.Areas.HelpPage
+namespace DoctorDrive.API.Areas.HelpPage.SampleGeneration
 {
     /// <summary>
     /// This is used to identify the place where the sample should be applied.

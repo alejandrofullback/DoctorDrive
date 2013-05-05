@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Web.Http;
 using System.Web.Mvc;
+using System.Web.Routing;
 using DoctorDrive.API.App_Start;
+
 
 namespace DoctorDrive.API
 {
@@ -11,8 +13,9 @@ namespace DoctorDrive.API
         protected void Application_Start(object sender, EventArgs e)
         {
             AreaRegistration.RegisterAllAreas();
-            WebApi.Register(GlobalConfiguration.Configuration);
-            AutoMapperBootStrapper.Configure();
+            WebApiConfig.Register(GlobalConfiguration.Configuration);
+            AutoMapperConfig.Configure();
+            RouteConfig.RegisterRoutes(RouteTable.Routes);
         }
 
         protected void Session_Start(object sender, EventArgs e)

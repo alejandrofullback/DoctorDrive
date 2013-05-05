@@ -7,7 +7,7 @@ using System.Web.Routing;
 
 namespace DoctorDrive.API.App_Start
 {
-    public class Route
+    public class RouteConfig
     {
         public static void RegisterRoutes(RouteCollection routes)
         {

@@ -4,7 +4,7 @@ using DoctorDrive.API.Filters;
 
 namespace DoctorDrive.API.App_Start
 {
-    public class WebApi
+    public class WebApiConfig
     {
         /// <summary>
         /// Registers the specified configuration.
@@ -16,7 +16,7 @@ namespace DoctorDrive.API.App_Start
                 new { id = RouteParameter.Optional });
 
             configuration.Filters.Add(new UnhandledExceptionAttribute());
-            configuration.EnableCors();
+            configuration.EnableCors(new EnableCorsAttribute("http://example.com,http://doctordrive.eptecno.com", "POST,PUT,DELETE,GET", "POST,PUT,DELETE,GET"));
         }
     }
 }
