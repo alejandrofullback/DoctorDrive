@@ -4,8 +4,8 @@ using System.Web.Http;
 using System.Web.Http.Cors;
 using DoctorDrive.API.Filters;
 using DoctorDrive.API.Transport.DTO;
-using DoctorDrive.Repository.IRepository;
-using DoctorDrive.Repository.Model;
+using DoctorDrive.Infra.Interface.IRepository;
+using DoctorDrive.Infra.Model;
 using Macaco.Infraestructure.Mapping;
 
 namespace DoctorDrive.API.Controllers
@@ -24,7 +24,6 @@ namespace DoctorDrive.API.Controllers
             _patientRepository = patientRepository;
             _personRepository = personRepository;
         }
-
 
         //patients
         [HttpGet]

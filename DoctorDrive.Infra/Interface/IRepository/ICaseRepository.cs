@@ -3,13 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using DoctorDrive.Repository.Model;
+using DoctorDrive.Infra.Model;
 using Macaco.Repository.Interface.IRepository;
 
-namespace DoctorDrive.Repository.IRepository
+namespace DoctorDrive.Infra.Interface.IRepository
 {
-    public interface IPersonRepository : IBaseRepository<Person>
-    {
-
-    }
+	public interface ICaseRepository : IBaseRepository<Case>
+	{
+	}
 }

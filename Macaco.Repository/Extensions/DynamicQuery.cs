@@ -25,10 +25,10 @@ namespace Macaco.Repository.Extensions
         internal static string GetInsertQuery(string tableName, dynamic item, string key)
         {
             PropertyInfo[] props = item.GetType().GetProperties();
-            var properties = new List<PropertyInfo>(props)
-                .Where(prop => prop.IsDefined(typeof(DbParameterAttribute), false));
+			List<PropertyInfo> properties = new List<PropertyInfo>(props)
+                .Where(prop => prop.IsDefined(typeof(DbParameterAttribute), false)).ToList();
 
-            string[] columns = properties.Select(p => p.Name).Where(s => s != "Id").ToArray();
+            string[] columns = properties.Where(p=> p.DeclaringType != null && p.DeclaringType.Name == tableName).Select(p => p.Name).Where(s => s != "Id").ToArray();
 
             return string.Format("INSERT INTO {0} ({1}) VALUES (@{2}); SELECT Max({3}) FROM {0}",
                                       tableName,

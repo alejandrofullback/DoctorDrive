@@ -1,8 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DoctorDrive", "DoctorDrive\DoctorDrive.csproj", "{046BF996-18B1-4FA6-BA8A-B402414AF632}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{DCFEE1B6-08C5-43DB-AEB6-2A3572F6C44C}"
 	ProjectSection(SolutionItems) = preProject
 		.nuget\NuGet.Config = .nuget\NuGet.Config
@@ -20,9 +18,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Macaco.Repository", "Macaco
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Macaco.Ninject", "Macaco.Ninject\Macaco.Ninject.csproj", "{24AEBA24-6DFB-4013-97A6-A9694F581808}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DoctorDrive.Infra", "DoctorDrive.Infra", "{B1DC083B-3986-44CF-9DF8-EDE0FC4A9046}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DoctorDrive.Repository", "DoctorDrive.Repository\DoctorDrive.Repository.csproj", "{B5FB1498-4399-4839-B336-F502DCA9ACE9}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infra", "Infra", "{B1DC083B-3986-44CF-9DF8-EDE0FC4A9046}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DoctorDrive.API", "DoctorDrive.API\DoctorDrive.API.csproj", "{9210316A-C49B-49E2-81C7-75B26DEF5FE1}"
 EndProject
@@ -30,16 +26,14 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{35BFCF71
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DoctorDrive.API.Tests", "DoctorDrive.API.Tests\DoctorDrive.API.Tests.csproj", "{27B654C9-2681-47CC-BB7B-F10A5E4DDB9C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DoctorDrive.Infra", "DoctorDrive.Infra\DoctorDrive.Infra.csproj", "{DC630E06-7A5B-4561-B6FB-B01F88AD3B74}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{046BF996-18B1-4FA6-BA8A-B402414AF632}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{046BF996-18B1-4FA6-BA8A-B402414AF632}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{046BF996-18B1-4FA6-BA8A-B402414AF632}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{046BF996-18B1-4FA6-BA8A-B402414AF632}.Release|Any CPU.Build.0 = Release|Any CPU
 		{88F8FE1D-CEB3-4AE2-BBF0-CA5E752F055C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{88F8FE1D-CEB3-4AE2-BBF0-CA5E752F055C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{88F8FE1D-CEB3-4AE2-BBF0-CA5E752F055C}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -52,10 +46,6 @@ Global
 		{24AEBA24-6DFB-4013-97A6-A9694F581808}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{24AEBA24-6DFB-4013-97A6-A9694F581808}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{24AEBA24-6DFB-4013-97A6-A9694F581808}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B5FB1498-4399-4839-B336-F502DCA9ACE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B5FB1498-4399-4839-B336-F502DCA9ACE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B5FB1498-4399-4839-B336-F502DCA9ACE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B5FB1498-4399-4839-B336-F502DCA9ACE9}.Release|Any CPU.Build.0 = Release|Any CPU
 		{9210316A-C49B-49E2-81C7-75B26DEF5FE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{9210316A-C49B-49E2-81C7-75B26DEF5FE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9210316A-C49B-49E2-81C7-75B26DEF5FE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -64,6 +54,10 @@ Global
 		{27B654C9-2681-47CC-BB7B-F10A5E4DDB9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{27B654C9-2681-47CC-BB7B-F10A5E4DDB9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{27B654C9-2681-47CC-BB7B-F10A5E4DDB9C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC630E06-7A5B-4561-B6FB-B01F88AD3B74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC630E06-7A5B-4561-B6FB-B01F88AD3B74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC630E06-7A5B-4561-B6FB-B01F88AD3B74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC630E06-7A5B-4561-B6FB-B01F88AD3B74}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -73,7 +67,7 @@ Global
 		{2FD0EE6E-26D8-4DD3-B5D7-68E27B2EA188} = {76B93843-7072-4DBE-B97C-81A83FE00BCA}
 		{24AEBA24-6DFB-4013-97A6-A9694F581808} = {76B93843-7072-4DBE-B97C-81A83FE00BCA}
 		{9210316A-C49B-49E2-81C7-75B26DEF5FE1} = {A0A6A258-9917-4B2F-B966-3FB673A25A7A}
-		{B5FB1498-4399-4839-B336-F502DCA9ACE9} = {B1DC083B-3986-44CF-9DF8-EDE0FC4A9046}
+		{DC630E06-7A5B-4561-B6FB-B01F88AD3B74} = {B1DC083B-3986-44CF-9DF8-EDE0FC4A9046}
 		{27B654C9-2681-47CC-BB7B-F10A5E4DDB9C} = {35BFCF71-DEEE-4F72-AA85-05778EBEDA85}
 	EndGlobalSection
 EndGlobal

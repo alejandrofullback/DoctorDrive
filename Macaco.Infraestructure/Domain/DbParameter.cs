@@ -9,5 +9,6 @@ namespace Macaco.Infraestructure.Domain
     public class DbParameterAttribute : Attribute
     {
         public string ParameterName { get; set; }
+		public string Table { get; set; }
     }
 }

@@ -48,6 +48,10 @@
     <Reference Include="AutoMapper">
       <HintPath>..\packages\AutoMapper.2.2.1\lib\net40\AutoMapper.dll</HintPath>
     </Reference>
+    <Reference Include="Dapper, Version=1.12.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Dapper.1.12.1\lib\net40\Dapper.dll</HintPath>
+    </Reference>
     <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\Newtonsoft.Json.4.5.11\lib\net40\Newtonsoft.Json.dll</HintPath>
@@ -268,6 +272,7 @@
     <Compile Include="App_Start\NinjectWebCommon.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\BaseController.cs" />
+    <Compile Include="Controllers\CasesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\PatientsController.cs" />
     <Compile Include="Filters\NotFoundException.cs" />
@@ -321,9 +326,9 @@
     <Folder Include="Areas\HelpPage\Content\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\DoctorDrive.Repository\DoctorDrive.Repository.csproj">
-      <Project>{B5FB1498-4399-4839-B336-F502DCA9ACE9}</Project>
-      <Name>DoctorDrive.Repository</Name>
+    <ProjectReference Include="..\DoctorDrive.Infra\DoctorDrive.Infra.csproj">
+      <Project>{dc630e06-7a5b-4561-b6fb-b01f88ad3b74}</Project>
+      <Name>DoctorDrive.Infra</Name>
     </ProjectReference>
     <ProjectReference Include="..\Macaco.Infraestructure\Macaco.Infraestructure.csproj">
       <Project>{88f8fe1d-ceb3-4ae2-bbf0-ca5e752f055c}</Project>

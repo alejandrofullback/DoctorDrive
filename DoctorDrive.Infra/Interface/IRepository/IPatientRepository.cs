@@ -1,7 +1,7 @@
-﻿using DoctorDrive.Repository.Model;
+﻿using DoctorDrive.Infra.Model;
 using Macaco.Repository.Interface.IRepository;
 
-namespace DoctorDrive.Repository.IRepository
+namespace DoctorDrive.Infra.Interface.IRepository
 {
     public interface IPatientRepository : IBaseRepository<Patient>
     {

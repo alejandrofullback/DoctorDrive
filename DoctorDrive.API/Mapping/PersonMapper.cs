@@ -2,7 +2,7 @@
 using System.Linq;
 using AutoMapper;
 using DoctorDrive.API.Transport.DTO;
-using DoctorDrive.Repository.Model;
+using DoctorDrive.Infra.Model;
 
 namespace DoctorDrive.API.Mapping
 {

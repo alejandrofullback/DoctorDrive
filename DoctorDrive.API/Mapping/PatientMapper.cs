@@ -2,7 +2,7 @@
 using System.Linq;
 using AutoMapper;
 using DoctorDrive.API.Transport.DTO;
-using DoctorDrive.Repository.Model;
+using DoctorDrive.Infra.Model;
 
 namespace DoctorDrive.API.Mapping
 {
@@ -59,8 +59,6 @@ namespace DoctorDrive.API.Mapping
                     Phone = user.Phone,
                     ZIP = user.ZIP,
                     IsActive = user.IsActive,
-                    Case = new Case(),
-                    Doctor = new Doctor(),
                 };
             }
         }

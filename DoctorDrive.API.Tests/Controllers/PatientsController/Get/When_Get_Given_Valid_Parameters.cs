@@ -1,7 +1,7 @@
 ﻿using System.Linq;
 using DoctorDrive.API.App_Start;
-using DoctorDrive.Repository;
-using DoctorDrive.Repository.IRepository;
+using DoctorDrive.Infra.Interface.IRepository;
+using DoctorDrive.Infra.Repository;
 using Macaco.Infraestructure.Mapping;
 using Xunit;
 

@@ -1,8 +1,8 @@
-﻿using DoctorDrive.Repository.IRepository;
-using DoctorDrive.Repository.Model;
+﻿using DoctorDrive.Infra.Interface.IRepository;
+using DoctorDrive.Infra.Model;
 using Macaco.Repository.Repository;
 
-namespace DoctorDrive.Repository
+namespace DoctorDrive.Infra.Repository
 {
     public class PersonRepository : BaseRepository<Person>, IPersonRepository
     {

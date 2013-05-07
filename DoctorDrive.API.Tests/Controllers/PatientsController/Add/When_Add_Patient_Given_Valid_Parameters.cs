@@ -1,8 +1,8 @@
 ﻿using System;
 using DoctorDrive.API.App_Start;
 using DoctorDrive.API.Transport.DTO;
-using DoctorDrive.Repository;
-using DoctorDrive.Repository.IRepository;
+using DoctorDrive.Infra.Interface.IRepository;
+using DoctorDrive.Infra.Repository;
 using FizzWare.NBuilder;
 using Macaco.Infraestructure.Mapping;
 using Xunit;
@@ -41,8 +41,11 @@ namespace DoctorDrive.API.Tests.Controllers.PatientsController.Add
             fakePatient.Doctor = fakeDoctor;
 
 
-            //act
+            //Act
             sut.Create(fakePatient);
+
+			//Asssert
+			Assert.True(fakePatient.Id > 0);
 
         }
 

@@ -2,7 +2,7 @@
 using AutoMapper;
 using DoctorDrive.API.Mapping;
 using DoctorDrive.API.Transport.DTO;
-using DoctorDrive.Repository.Model;
+using DoctorDrive.Infra.Model;
 
 namespace DoctorDrive.API.App_Start
 {
