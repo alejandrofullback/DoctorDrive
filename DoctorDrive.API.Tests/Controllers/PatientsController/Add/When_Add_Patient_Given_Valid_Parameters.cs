@@ -29,18 +29,6 @@ namespace DoctorDrive.API.Tests.Controllers.PatientsController.Add
                                .Build();
 
 
-            var fakeCase = Builder<CaseItem>.CreateNew()
-                               .Build();
-
-
-
-            var fakeDoctor = Builder<DoctorItem>.CreateNew()
-                               .Build();
-
-            fakePatient.Case = fakeCase;
-            fakePatient.Doctor = fakeDoctor;
-
-
             //Act
             sut.Create(fakePatient);
 

@@ -30,8 +30,6 @@ namespace DoctorDrive.API.Mapping
                         Phone = user.Phone,
                         ZIP = user.ZIP,
                         IsActive = user.IsActive,
-                        Case = new CaseItem(),
-                        Doctor = new DoctorItem(),
                     }).ToList();
             }
         }
@@ -85,8 +83,6 @@ namespace DoctorDrive.API.Mapping
                     Phone = user.Phone,
                     ZIP = user.ZIP,
                     IsActive = user.IsActive,
-                    Case = new CaseItem(),
-                    Doctor = new DoctorItem(),
                 };
             }
         }

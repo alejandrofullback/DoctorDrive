@@ -4,10 +4,10 @@ using Macaco.Repository.Repository;
 
 namespace DoctorDrive.Infra.Repository
 {
-	public class CaseRepository : BaseRepository<Case>, ICaseRepository
+	public class CaseRepository : BaseRepository<PatientCase>, ICaseRepository
 	{
 		public CaseRepository()
-            : base("Case")
+            : base("PatientCase")
         {
         }
 	}

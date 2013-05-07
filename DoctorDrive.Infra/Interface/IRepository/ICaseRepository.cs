@@ -8,7 +8,7 @@ using Macaco.Repository.Interface.IRepository;
 
 namespace DoctorDrive.Infra.Interface.IRepository
 {
-	public interface ICaseRepository : IBaseRepository<Case>
+	public interface ICaseRepository : IBaseRepository<PatientCase>
 	{
 	}
 }

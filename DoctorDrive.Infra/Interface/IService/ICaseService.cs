@@ -1,17 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using DoctorDrive.Infra.Model;
 
 namespace DoctorDrive.Infra.Interface.IService
 {
     public interface ICaseService
     {
-        Case CreateCase(Case newCase);
-        List<Case> FindAll();
-		List<Case> FindResume();
-        Case UpdateCase(Case updateCase);
-    }
+        List<PatientCase> FindAll();
+		List<PatientCase> FindResume();
+        PatientCase UpdateCase(PatientCase updateCase);
+		PatientCase FindById(int id);
+		PatientCase Add(PatientCase item);
+
+		void Update(PatientCase item);
+	}
 }

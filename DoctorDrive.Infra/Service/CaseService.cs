@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using DoctorDrive.Infra.Interface.IRepository;
 using DoctorDrive.Infra.Interface.IService;
 using DoctorDrive.Infra.Model;
@@ -25,7 +23,39 @@ namespace DoctorDrive.Infra.Service
 		}
 
 
-		public Case CreateCase(Case newCase)
+
+		public List<PatientCase> FindAll()
+		{
+			var cases = new List<PatientCase>(_caseRepository.FindAll());
+			var patients = new List<Patient>(_patientRepository.FindAll());
+			var doctors = new List<Doctor>(_doctorRepository.FindAll());
+
+			foreach (var myCase in cases)
+			{
+				myCase.Patient = patients.FirstOrDefault(x => x.PersonId == myCase.IdPatient);
+				myCase.Doctor = doctors.FirstOrDefault(x => x.Id == myCase.IdDoctor);
+			}
+			return cases;
+		}
+
+		public List<PatientCase> FindResume()
+		{
+			throw new NotImplementedException();
+		}
+
+
+		public PatientCase UpdateCase(PatientCase updateCase)
+		{
+			throw new NotImplementedException();
+		}
+
+
+		public PatientCase FindById(int id)
+		{
+			throw new NotImplementedException();
+		}
+
+		public PatientCase Add(PatientCase newCase)
 		{
 			_personRepository.Add(newCase.Patient);
 			_patientRepository.Add(newCase.Patient);
@@ -37,18 +67,8 @@ namespace DoctorDrive.Infra.Service
 			return newCase;
 		}
 
-		public List<Case> FindAll()
-		{
-			throw new NotImplementedException();
-		}
 
-		public List<Case> FindResume()
-		{
-			throw new NotImplementedException();
-		}
-
-
-		public Case UpdateCase(Case updateCase)
+		public void Update(PatientCase item)
 		{
 			throw new NotImplementedException();
 		}

@@ -52,7 +52,7 @@
     <Compile Include="Interface\IRepository\IPatientRepository.cs" />
     <Compile Include="Interface\IRepository\IPersonRepository.cs" />
     <Compile Include="Interface\IService\ICaseService.cs" />
-    <Compile Include="Model\Case.cs" />
+    <Compile Include="Model\PatientCase.cs" />
     <Compile Include="Model\Doctor.cs" />
     <Compile Include="Model\Patient.cs" />
     <Compile Include="Model\Person.cs" />

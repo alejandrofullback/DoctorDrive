@@ -1,11 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
 using Macaco.Infraestructure.Domain;
 using Macaco.Repository.Interface.IRepository;
 
 namespace DoctorDrive.Infra.Model
 {
-    public class Case : EntityBase, IAggregateRoot
+    public class PatientCase : EntityBase, IAggregateRoot
     {
         public override string Key
         {
@@ -20,9 +19,8 @@ namespace DoctorDrive.Infra.Model
         public string InitialDiagnostic { get; set; }
         public string RecentlyInterned { get; set; }
         public DateTime? LastEvent { get; set; }
-
         public Patient Patient { get; set; }
         public Doctor Doctor { get; set; }
-        public List<Treatment> Treatment { get; set; }
+        public string Treatments { get; set; }
     }
 }

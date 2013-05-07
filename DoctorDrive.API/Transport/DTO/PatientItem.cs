@@ -12,10 +12,5 @@ namespace DoctorDrive.API.Transport.DTO
         [DataMember(Name = "isactive")]
         public bool IsActive { get; set; }
 
-        [DataMember(Name = "case")]
-        public CaseItem Case { get; set; }
-
-        [DataMember(Name = "doctor")]
-        public DoctorItem Doctor { get; set; }
     }
 }

@@ -281,10 +281,11 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Mapping\CaseMapper.cs" />
     <Compile Include="Mapping\PatientMapper.cs" />
     <Compile Include="Mapping\PersonMapper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Transport\DTO\CaseItem.cs" />
+    <Compile Include="Transport\DTO\PatientCaseItem.cs" />
     <Compile Include="Transport\DTO\DoctorItem.cs" />
     <Compile Include="Transport\DTO\PatientItem.cs" />
     <Compile Include="Transport\DTO\PersonItem.cs" />

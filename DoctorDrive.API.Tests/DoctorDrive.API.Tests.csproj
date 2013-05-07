@@ -66,6 +66,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\CasesController\Add\When_Add_Case_Given_Valid_Parameters.cs" />
+    <Compile Include="Controllers\CasesController\GetById\When_GetById_Given_Valid_Parameters.cs" />
+    <Compile Include="Controllers\CasesController\Get\When_Get_Given_Valid_Parameters.cs" />
     <Compile Include="Controllers\PatientsController\Add\When_Add_Patient_Given_Valid_Parameters.cs" />
     <Compile Include="Controllers\PatientsController\GetById\When_GetById_Given_Valid_Parameters.cs" />
     <Compile Include="Controllers\PatientsController\Get\When_Get_Given_Valid_Parameters.cs" />

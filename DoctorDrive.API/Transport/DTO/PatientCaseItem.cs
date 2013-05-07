@@ -1,10 +1,11 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Runtime.Serialization;
 
 namespace DoctorDrive.API.Transport.DTO
 {
     [Serializable, DataContract]
-    public class CaseItem
+    public class PatientCaseItem
     {
         [DataMember(Name = "id")]
         public int Id { get; set; }
@@ -36,5 +37,9 @@ namespace DoctorDrive.API.Transport.DTO
 
         [DataMember(Name = "bed")]
         public string Bed { get; set; }
+
+		public PatientItem Patient { get; set; }
+		public DoctorItem Doctor { get; set; }
+		public IList<TreatmentItem> Treatments { get; set; }
     }
 }

@@ -38,6 +38,9 @@
     <Reference Include="ServiceStack.ServiceInterface">
       <HintPath>..\packages\ServiceStack.3.9.43\lib\net35\ServiceStack.ServiceInterface.dll</HintPath>
     </Reference>
+    <Reference Include="ServiceStack.Text">
+      <HintPath>..\packages\ServiceStack.Text.3.9.44\lib\net35\ServiceStack.Text.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -55,6 +58,7 @@
     <Compile Include="Domain\Events\IEventContainer.cs" />
     <Compile Include="Domain\ValidationError.cs" />
     <Compile Include="Domain\ValidationErrors.cs" />
+    <Compile Include="Infra\Serializer.cs" />
     <Compile Include="Mapping\AutoMapperService.cs" />
     <Compile Include="Mapping\IMapper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
