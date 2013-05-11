@@ -316,6 +316,7 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Content\js\jquery-1.9.1.min.map" />
     <Content Include="Scripts\jquery-2.0.0.min.map" />
+    <Content Include="Scripts\uuid.core.js" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

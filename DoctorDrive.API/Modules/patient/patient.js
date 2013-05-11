@@ -15,7 +15,7 @@
     //self.patient.recentlyinterned = ko.observable();
     self.patient.contactname = ko.observable();
     self.patient.isactive = true;
-    self.patient.code = "kldfhoo;ejfhue";
+    self.patient.code = UUID.generate();
     self.patient.doctor = {};
     self.patient.doctor.name = ko.observable();
     self.patient.doctor.phone = ko.observable();

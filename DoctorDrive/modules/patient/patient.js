@@ -50,11 +50,11 @@
         //ko.validatedObservable(self.patient.bed());
         var patientData = ko.toJSON(self.patient);
         $.ajax({
-            crossDomain:true,
+            crossDomain: true,
             type: "POST",
             url: "http://doctor.eptecno.com/api/patients",
             data: patientData,
-            contentType: "application/json; charset=utf-8",
+            contentType: "application/json",
             dataType: "json"
         });
     };
